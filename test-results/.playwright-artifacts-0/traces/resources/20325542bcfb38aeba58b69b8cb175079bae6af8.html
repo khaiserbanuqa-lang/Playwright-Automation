@@ -1,0 +1,307 @@
+
+
+
+
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>ParaBank | Update Profile</title>
+		<link href="template.css" rel="stylesheet"
+			type="text/css" />
+		<link href="style.css" rel="stylesheet"
+			type="text/css" />
+		<script src="webjars/jquery/4.0.0/jquery.min.js"></script>
+	</head>
+
+	<body
+		>
+		<div id="mainPanel">
+			
+				
+				
+					
+
+
+
+<div id="topPanel">
+  <a href="admin.htm"><img src="images/clear.gif" width="56" height="42" border="0" class="admin"/></a>
+  <a href="index.htm"><img src="images/logo.gif" alt="ParaBank" width="136" height="31" border="0" class="logo" title="ParaBank"/></a>
+  <p class="caption">Experience the difference</p>
+</div>
+<div id="headerPanel" style="background: url(images/header-customer.jpg) 0 0 no-repeat;">
+  
+
+
+<ul class="leftmenu">
+  <li class="Solutions">Solutions</li>
+  <li><a href="about.htm">About Us</a></li>
+  <li><a href="services.htm">Services</a></li>
+  <li><a href="http://www.parasoft.com/jsp/products.jsp">Products</a></li>
+  <li><a href="http://www.parasoft.com/jsp/pr/contacts.jsp">Locations</a></li>
+  <li><a href="admin.htm">Admin Page</a></li>
+  
+</ul>
+  
+
+
+<ul class="button">
+  <li class="home"><a href="index.htm">home</a></li>
+  <li class="aboutus"><a href="about.htm">about</a></li>
+  <li class="contact"><a href="contact.htm">contact</a></li>
+</ul>
+</div>
+				
+			
+			<div id="bodyPanel">
+				<div id="leftPanel">
+					
+						
+						
+							
+
+
+<p class="smallText"><b>Welcome</b> John Smith</p>
+
+<h2>Account Services</h2>
+
+
+
+<ul>
+  <li><a href="openaccount.htm">Open New Account</a></li>
+  <li><a href="overview.htm">Accounts Overview</a></li>
+  <li><a href="transfer.htm">Transfer Funds</a></li>
+  <li><a href="billpay.htm">Bill Pay</a></li>
+  <li><a href="findtrans.htm">Find Transactions</a></li>
+  <li><a href="updateprofile.htm">Update Contact Info</a></li>
+  <li><a href="requestloan.htm">Request Loan</a></li>
+  <li><a href="logout.htm">Log Out</a></li>
+</ul>
+						
+					
+				</div>
+				<div id="rightPanel">
+					
+
+
+
+<div>
+	<div id="updateProfileForm">
+		<h1 class="title">Update Profile</h1>
+
+		<form name="contact">
+		  <table class="form2">
+			<tr>
+			  <td align="right" width="30%"><b>First Name:</b></td>
+			  <td width="20%">
+				<input id="customer.firstName" name="customer.firstName" class="input" type="text">
+			  </td>
+			  <td width="50%">
+				<span id="firstName-error" class="error" style="display:none">First name is required.</span>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" width="30%"><b>Last Name:</b></td>
+			  <td width="20%">
+				<input id="customer.lastName" name="customer.lastName" class="input" type="text">
+			  </td>
+			  <td width="50%">
+				<span id="lastName-error" class="error" style="display:none">Last name is required.</span>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" width="30%"><b>Address:</b></td>
+			  <td width="20%">
+				<input id="customer.address.street" name="customer.address.street" class="input" type="text">
+			  </td>
+			  <td width="50%">
+				<span id="street-error" class="error" style="display:none">Address is required.</span>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" width="30%"><b>City:</b></td>
+			  <td width="20%">
+				<input id="customer.address.city" name="customer.address.city" class="input" type="text">
+			  </td>
+			  <td width="50%">
+				<span id="city-error" class="error" style="display:none">City is required.</span>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" width="30%"><b>State:</b></td>
+			  <td width="20%">
+				<input id="customer.address.state" name="customer.address.state" class="input" type="text">
+			  </td>
+			  <td width="50%">
+				<span id="state-error" class="error" style="display:none">State is required.</span>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" width="30%"><b>Zip Code:</b></td>
+			  <td width="20%">
+				<input id="customer.address.zipCode" name="customer.address.zipCode" class="input" type="text">
+			  </td>
+			  <td width="50%">
+				<span id="zipCode-error" class="error" style="display:none">Zip Code is required.</span>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" width="30%"><b>Phone #:</b></td>
+			  <td width="20%">
+				<input id="customer.phoneNumber" name="customer.phoneNumber" class="input" type="text">
+			  </td>
+			  <td width="50%">
+			  </td>
+			</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td colspan="2"><input type="button" class="button" value="Update Profile"></td>
+			</tr>
+		  </table>
+		  <br>
+		</form>
+	</div>
+	<div id="updateProfileResult" style="display:none">
+		<h1 class="title">Profile Updated</h1>
+		<p>Your updated address and phone number have been added to the system. </p>
+	</div>
+
+	<div id="updateProfileError" style="display:none">
+		<h1 class="title">Error!</h1>
+		<p class="error">An internal error has occurred and has been logged.</p>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function() {
+		var customer = null;
+		var showForm = function(visible) {
+			if (visible) {
+				$("#updateProfileForm").show();
+			} else {
+				$("#updateProfileForm").hide();
+			}
+		}
+		var showResult = function(visible) {
+			if (visible) {
+				$("#updateProfileResult").show();
+			} else {
+				$("#updateProfileResult").hide();
+			}
+		}
+		var showError = function() {
+			if (visible) {
+				$("#updateProfileError").show();
+			} else {
+				$("#updateProfileError").hide();
+			}
+		}
+		var showError = function(error) {
+            showForm(false);
+            showResult(false);
+            $('#updateProfileError').show();
+            var status = error.status > 0 ? error.status : "timeout";
+            var data = error.data ? error.data : "Server timeout"
+            console.error("Server returned " + status + ": " + data);
+        }
+		var getCustomer = function() {
+			$.ajax({
+				url: "services_proxy/bank/customers/12212",
+				dataType: "json",
+				success: function(data) {
+					customer = data;
+					$('#customer\\.firstName').val(data.firstName);
+					$('#customer\\.lastName').val(data.lastName);
+					$('#customer\\.address\\.street').val(data.address.street);
+					$('#customer\\.address\\.city').val(data.address.city);
+					$('#customer\\.address\\.state').val(data.address.state);
+					$('#customer\\.address\\.zipCode').val(data.address.zipCode);
+					$('#customer\\.phoneNumber').val(data.phoneNumber);
+				},
+				error: function(data) {
+					showError(data);
+				}
+			})
+		}
+		var validate = function() {
+			$('#customer\\.firstName').val() ? $('#firstName-error').hide() : $('#firstName-error').show();
+			$('#customer\\.lastName').val() ? $('#lastName-error').hide() : $('#lastName-error').show();
+			$('#customer\\.address\\.street').val() ? $('#street-error').hide() : $('#street-error').show();
+			$('#customer\\.address\\.city').val() ? $('#city-error').hide() : $('#city-error').show();
+			$('#customer\\.address\\.state').val() ? $('#state-error').hide() : $('#state-error').show();
+			$('#customer\\.address\\.zipCode').val() ? $('#zipCode-error').hide() : $('#zipCode-error').show();
+			
+			//look thru validation markers to see if any are visible
+        	return $("span.error:visible").length == 0;
+		}
+		var submit = function() {
+			if (validate()) {
+				var url = "services_proxy/bank/customers/update/12212" +
+					"?firstName=" + encodeURIComponent($('#customer\\.firstName').val()) +
+					"&lastName=" + encodeURIComponent($('#customer\\.lastName').val()) +
+					"&street=" + encodeURIComponent($('#customer\\.address\\.street').val()) +
+					"&city=" + encodeURIComponent($('#customer\\.address\\.city').val()) +
+					"&state=" + encodeURIComponent($('#customer\\.address\\.state').val()) +
+					"&zipCode=" + encodeURIComponent($('#customer\\.address\\.zipCode').val()) +
+					"&phoneNumber=" + encodeURIComponent($('#customer\\.phoneNumber').val()) +
+					"&ssn=" + encodeURIComponent(customer.ssn) +
+					"&username=john&password=demo";
+				$.ajax({
+					url: url,
+					type: "POST",
+					timeout: 30000, 
+					success: function(data) {
+						//Will always fail if the update succeeds because
+						//its trying to parse the response as JSON
+ 					},
+					error: function(data) {
+						// the server will return an error event if the update succeeds
+						// check status code
+						if (data.status == 200) {
+							showForm(false);
+							showResult(true);
+						} else {
+							showError(data);							
+						}
+					}
+				})
+			}
+		}
+		
+		$("input[type=button]").click(() => {
+        	submit(); 
+		});
+		getCustomer();
+		showForm(true);
+	});
+</script>
+				</div>
+			</div>
+		</div>
+		
+
+
+<div id="footermainPanel">
+  <div id="footerPanel">
+    <ul>
+      <li><a href="index.htm">Home</a>| </li>
+      <li><a href="about.htm">About Us</a>| </li>
+      <li><a href="services.htm">Services</a>| </li>
+      <li><a href="http://www.parasoft.com/jsp/products.jsp">Products</a>| </li>
+      <li><a href="http://www.parasoft.com/jsp/pr/contacts.jsp">Locations</a>| </li>
+      <li><a href="sitemap.htm">Site Map</a>| </li>
+      <li><a href="contact.htm">Contact Us</a></li>
+    </ul>
+    <p class="copyright">&copy; Parasoft. All rights reserved.</p>
+    <ul class="visit">
+      <li>Visit us at:</li>
+      <li><a href="http://www.parasoft.com/" target="_blank">www.parasoft.com</a></li>
+    </ul>
+  </div>
+</div>
+	</body>
+</html>
